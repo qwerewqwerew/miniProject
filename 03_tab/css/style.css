@@ -1,0 +1,13 @@
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialised; } 
+
+.tab-wrapper { max-width: 960px; width: 100%; margin: 30px auto; } 
+.tab-menu { display: flex; } 
+.tab-menu li { list-style: none; background: #ebebeb; margin-right: 10px; } 
+.tab-menu li a { color: #999; font-weight: bold; text-decoration: none; display: block; padding: 10px 20px; } 
+.tab-menu li a.active { background: #000; color: #fff; } 
+
+/* 지시사항 
+tab-content의 내용들을 한곳에 모두 겹쳐 놓고 모두 나타나지 않도록 display를 none으로 설정합니다.
+*/
+#tab-content { position: relative; } 
+#tab-content > div { position: absolute; top:0; left:0; padding:1.5em; background:#eeeeee; display:none;} 
